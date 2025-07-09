@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="au.css">
+</head>
+<body>
+    <p><strong>Fiche des membres</strong></p>
+    <div class="fiche" id="formulairemodifier">
+        <label for="inputNom"><strong>Nom</strong></label>
+        <input type="text" id="inputNom"> 
+
+        <label for="inputprenom"><strong>Prenom</strong></label>
+        <input type="text" id="inputPrenom">
+
+        <label for="inputage"><strong>age</strong></label>
+        <input type="number" id="inputage">
+
+        <label for="inptelephone"><strong>Telephone</strong></label>
+        <input type="number" id="inputelephone">
+
+        <label for="inputemail"><strong>email</strong></label>
+        <input type="text" id="inputemail">
+
+        <button id="inputajouter"><strong>Ajoutermembre</strong></button>
+        <button id="Sauvegardermembre"><strong>Sauvegarder</strong></button>
+        <button id="Supprimermembre"><strong>Supprimer</strong></button>
+    </div>
+
+    <!-- Liste des membres -->
+    <div class="fiche" id="listeMembres" style="margin-top:30px;">
+        <h3>Liste des membres</h3>
+        <table id="membresTable" style="width:100%;border-collapse:collapse;">
+            <thead>
+                <tr style="background:#f0f0f0;">
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Âge</th>
+                    <th>Téléphone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="au.js"></script>
+</body>
+
+    
+    
+   
+
+</html>

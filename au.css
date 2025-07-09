@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg, #f0f4f8 0%, #e0e7ef 100%);
+    margin: 0;
+    min-height: 100vh;
+}
+
+p {
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #8a5252;
+    border: 1px solid #6d3c3c;
+    border-radius: 8px;
+    padding: 10px 0;
+    width: 350px;
+    max-width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.fiche {
+    background: #fff;
+    padding: 24px 28px 20px 28px;
+    border-radius: 12px;
+    width: 350px;
+    max-width: 98vw;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    margin: 30px auto 0 auto;
+    transition: box-shadow 0.2s;
+}
+.fiche:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+}
+.fiche label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #333;
+}
+.fiche input {
+    width: 100%;
+    margin-top: 6px;
+    padding: 9px 10px;
+    border-radius: 6px;
+    border: 1px solid #bfc9d1;
+    font-size: 1rem;
+    background: #f7fafd;
+    transition: border 0.2s;
+}
+.fiche input:focus {
+    border: 1.5px solid #007bff;
+    outline: none;
+    background: #fff;
+}
+.fiche button {
+    margin-top: 18px;
+    margin-right: 10px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+#inputajouter {
+    background: linear-gradient(90deg, #28a745 60%, #218838 100%);
+    color: #fff;
+}
+#inputajouter:hover {
+    background: linear-gradient(90deg, #218838 60%, #28a745 100%);
+}
+#Sauvegardermembre {
+    background: linear-gradient(90deg, #007bff 60%, #0056b3 100%);
+    color: #fff;
+}
+#Sauvegardermembre:hover {
+    background: linear-gradient(90deg, #0056b3 60%, #007bff 100%);
+}
+#Supprimermembre {
+    background: linear-gradient(90deg, #dc3545 60%, #b21f2d 100%);
+    color: #fff;
+}
+#Supprimermembre:hover {
+    background: linear-gradient(90deg, #b21f2d 60%, #dc3545 100%);
+}
+
+/* Tableau des membres */
+#membresTable {
+    width: 90vw;
+    max-width: 1200px;
+    min-width: 600px;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 1rem;
+    table-layout: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fiche#listeMembres {
+    width: 90vw;
+    max-width: 1200px;
+    min-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+#membresTable th, #membresTable td {
+    border: 1px solid #e0e7ef;
+    padding: 10px 8px;
+    text-align: left;
+    max-width: 240px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+}
+#membresTable th {
+    background: #f0f0f0;
+    color: #333;
+    font-weight: 700;
+}
+#membresTable tr {
+    transition: background 0.2s;
+}
+#membresTable tr:hover {
+    background: #eaf4ff;
+}
+#membresTable tr.selected {
+    background: #e0eaff !important;
+}
